@@ -1,0 +1,40 @@
+body{
+    background-image: url('Fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1{
+    color: black;
+}
+p{
+    color: black;
+    font-size: 18px;
+}
+button{
+    background-color: #77ef7bf4;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #77ef7bf4;
+}
+.galeria{
+    margin-top: 15px;
+}
+
+.galeria img,
+.galeria video{
+    width: 220px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
