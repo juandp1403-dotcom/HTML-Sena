@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi primera pagina</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="body">
+        <div class = "titulo">
+            <h1>Mi primera pagina</h1>
+        </div>
+        <div class = "titulo">
+            <button id = "menu-btn" class="menu-fixed">☰ Menú</button>
+        </div>
+        <div id = "menu" class = "menu-sidebar">
+            <button id="close-btn" class="close-btn">✕</button>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="puntaje-container">
+            <h3>Puntaje: <span id="puntaje">0</span></h3>
+        </div>
+        
+        <div class = caja>
+            <dialog id = "mi-modal">
+                <h3>Advertencia</h3>
+                <p>Aqui encontraras personas en acciones no muy saludables se recomienda discresion</p>
+                <form method = "dialog">
+                    <button id = "cerrarDialogo">Cerrar</button>
+                </form>
+            </dialog>
+            <button onclick="document.getElementById('mi-modal').showModal()">Advertencia</button>
+            <h1>Hola, Mapanas!</h1>
+            <form action = "/procesar.php" method = "post">
+                <label for = "nombre">Nombre:</label>
+                <input type = "text" id = "nombre" name = "nombre"><br><br>
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email"><br><br>
+                <label for = "edad">Edad:</label>
+                <input type = "number" id = "edad" name = "edad"><br><br>
+                <input type = "submit" value = "Enviar">
+            </form>
+            <p>Esta es mi primera pagina web, estoy aprendiendo a usar HTML.</p>
+            <img src = negrolas.jpg alt = "Joven venezolano embriagandose" width = "250" height = "300">
+            <p>¡Mira esta imagen de un joven venezolano disfrutando de una bebida!</p>
+            <div class = "jarto">
+                <button aria-label = "Boton de jarto">🍾</button>
+                <span class="contador-jarto">0</span>
+            </div>
+            <p>¡Espero que te guste!</p>
+            <video width = "500" height = "300" controls>
+            <source src = "amanecer.mp4" type = "video/mp4" alt = "Video del amanecer">
+             Tu navegador no soporta el elemento de video.
+            </video>
+            <p>¡No olvides darle like al video!</p>
+            <div class = "corazon">
+                <button aria-label = "Boton de me gusta">❤️</button>
+                <span class="contador-corazon">0</span>
+            </div>
+            <p>¡Mira este video del amanecer!</p>
+            <p>Puedes encontrar mas amaneceres aqui:</p>
+            <ul id="contacto">
+                <li><a href="https://www.instagram.com/_juanesdiaz?igsh=eDhubGJiYTNzbW5h&utm_source=qr">Instagram de Juanes Diaz</a></li>
+            </ul>
+
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
