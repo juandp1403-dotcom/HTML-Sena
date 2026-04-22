@@ -25,3 +25,36 @@ document.querySelector('.corazon button').addEventListener('click', function() {
     document.getElementById('puntaje').textContent = puntaje;
     document.querySelector('.contador-corazon').textContent = clicksCorazon;
 });
+
+// Funciones de la calculadora
+function sumar() {
+    let num1 = parseFloat(document.getElementById('numero1').value) || 0;
+    let num2 = parseFloat(document.getElementById('numero2').value) || 0;
+    let resultado = num1 + num2;
+    document.getElementById('resultado-calculadora').textContent = resultado;
+}
+
+function restar() {
+    let num1 = parseFloat(document.getElementById('numero1').value) || 0;
+    let num2 = parseFloat(document.getElementById('numero2').value) || 0;
+    let resultado = num1 - num2;
+    document.getElementById('resultado-calculadora').textContent = resultado;
+}
+
+function multiplicar() {
+    let num1 = parseFloat(document.getElementById('numero1').value) || 0;
+    let num2 = parseFloat(document.getElementById('numero2').value) || 0;
+    let resultado = num1 * num2;
+    document.getElementById('resultado-calculadora').textContent = resultado;
+}
+
+function dividir() {
+    let num1 = parseFloat(document.getElementById('numero1').value) || 0;
+    let num2 = parseFloat(document.getElementById('numero2').value) || 0;
+    if (num2 === 0) {
+        document.getElementById('resultado-calculadora').textContent = 'Error: No se puede dividir por 0';
+    } else {
+        let resultado = num1 / num2;
+        document.getElementById('resultado-calculadora').textContent = resultado;
+    }
+}
